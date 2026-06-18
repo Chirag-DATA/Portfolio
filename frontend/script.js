@@ -164,7 +164,7 @@ async function handleSubmit(event) {
     try {
 
         const response = await fetch(
-            "http://localhost:5000/contact",
+            "https://portfolio-5izn.onrender.com",
             {
                 method: "POST",
                 headers: {
