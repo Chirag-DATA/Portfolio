@@ -144,7 +144,7 @@ Meerut Institute of Engineering & Technology (MIET)
 
 If you'd like to discuss opportunities, collaborations, or projects, feel free to connect.
 
-* Email: [your-email@example.com](mailto:your-email@example.com)
+* Email: mittalchirag2004@gmail.com
 * LinkedIn: Add LinkedIn URL
 * GitHub: Add GitHub URL
 * Portfolio: Add Portfolio URL
