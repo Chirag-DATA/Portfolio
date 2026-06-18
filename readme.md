@@ -145,8 +145,8 @@ Meerut Institute of Engineering & Technology (MIET)
 If you'd like to discuss opportunities, collaborations, or projects, feel free to connect.
 
 * Email: mittalchirag2004@gmail.com
-* LinkedIn: Add LinkedIn URL
-* GitHub: Add GitHub URL
+* LinkedIn: https://www.linkedin.com/in/mittal-chirag/
+* GitHub: https://github.com/Chirag-DATA
 * Portfolio: Add Portfolio URL
 
 ---
@@ -193,10 +193,5 @@ If you find this portfolio inspiring or useful, consider giving this repository 
 
 ---
 
-## 📄 License
-
-This project is open-source and available under the MIT License.
-
----
 
 ### Made with ❤️ by Chirag Mittal
