@@ -164,7 +164,7 @@ async function handleSubmit(event) {
     try {
 
         const response = await fetch(
-            "https://portfolio-backend-v1zf.onrender.com",
+            "https://portfolio-backend-v1zf.onrender.com/contact",
             {
                 method: "POST",
                 headers: {
