@@ -6,7 +6,7 @@ This portfolio showcases my educational background, technical skills, certificat
 
 ## 🚀 Live Portfolio
 
-**Portfolio Website:** [Add Your Portfolio URL Here]
+**Portfolio Website:** https://chirag-mittal.netlify.app/
 
 ---
 
