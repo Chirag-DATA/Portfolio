@@ -65,11 +65,12 @@ reveals.forEach(el => observer.observe(el));
 // ==========================
 
 const roles = [
-  'AI & ML Engineer',
+  'Full-Stack Developer',
+  'AI Enthusiast',
   'Data Analyst',
-  'Cloud Enthusiast',
-  'Power BI Developer',
-  'Python Developer'
+  'FastAPI Developer',
+  'React Developer',
+  'Power BI Developer'
 ];
 
 let roleIdx = 0;

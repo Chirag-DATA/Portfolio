@@ -14,126 +14,259 @@
 </head>
 <body>
 
-<!-- NAV -->
+<!-- ===================== NAVIGATION ===================== -->
 <nav id="navbar">
   <div class="nav-inner">
-    <a href="#hero" class="logo">CM</a>
+
+    <!-- Logo -->
+    <a href="#hero" class="logo" aria-label="Chirag Mittal Portfolio">
+      CM
+    </a>
+
+    <!-- Desktop Navigation -->
     <ul class="nav-links">
       <li><a href="#about">About</a></li>
+      <li><a href="#education">Education</a></li>
       <li><a href="#skills">Skills</a></li>
       <li><a href="#projects">Projects</a></li>
-      <li><a href="#certifications">Certs</a></li>
+      <li><a href="#certifications">Certifications</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
+
+    <!-- Right Side Actions -->
     <div class="nav-actions">
-      <button class="theme-btn" id="themeToggle" aria-label="Toggle theme">
+
+      <!-- Theme Toggle -->
+      <button class="theme-btn" id="themeToggle" aria-label="Toggle Theme">
         <i class="ri-sun-line" id="themeIcon"></i>
       </button>
-      <a href="mailto:mittalchirag2004@gmail.com" class="btn btn-primary" style="padding: 0.45rem 1rem;">
-        <i class="ri-mail-line"></i> Hire Me
+
+      <!-- Hire Me Button -->
+      <a
+        href="mailto:mittalchirag2004@gmail.com?subject=Opportunity%20for%20Chirag%20Mittal"
+        class="btn btn-primary"
+        style="padding:0.45rem 1rem;"
+        aria-label="Hire Chirag Mittal"
+      >
+        <i class="ri-mail-line"></i>
+        Hire Me
       </a>
-      <button class="hamburger" id="menuBtn" aria-label="Open menu">
-        <span></span><span></span><span></span>
+
+      <!-- Mobile Menu -->
+      <button
+        class="hamburger"
+        id="menuBtn"
+        aria-label="Open Navigation Menu"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
       </button>
+
     </div>
+
   </div>
 </nav>
 
-<!-- MOBILE NAV -->
+<!-- ===================== MOBILE NAVIGATION ===================== -->
+
 <div class="mobile-nav" id="mobileNav">
-  <button class="mobile-nav-close" id="menuClose"><i class="ri-close-line"></i></button>
+
+  <button
+    class="mobile-nav-close"
+    id="menuClose"
+    aria-label="Close Navigation Menu"
+  >
+    <i class="ri-close-line"></i>
+  </button>
+
   <a href="#about" class="mobile-link">About</a>
   <a href="#education" class="mobile-link">Education</a>
   <a href="#skills" class="mobile-link">Skills</a>
   <a href="#projects" class="mobile-link">Projects</a>
   <a href="#certifications" class="mobile-link">Certifications</a>
   <a href="#contact" class="mobile-link">Contact</a>
+
 </div>
 
-<!-- HERO -->
+<!-- ===================== HERO ===================== -->
 <section class="hero" id="hero">
+
   <div class="hero-bg"></div>
+
   <canvas id="hero-canvas"></canvas>
+
   <div class="hero-content">
-    <div class="hero-eyebrow reveal">Available for Opportunities</div>
+
+    <div class="hero-eyebrow reveal">
+       Open to Full-Stack, AI & Data Opportunities
+    </div>
+
     <h1 class="hero-name reveal reveal-delay-1">
       <span class="gradient-text">Chirag</span> Mittal
     </h1>
+
     <p class="hero-title reveal reveal-delay-2">
-      <span id="typed-role"></span><span class="typed-cursor">|</span>
+      <span id="typed-role"></span>
+      <span class="typed-cursor">|</span>
     </p>
+
     <p class="hero-tagline reveal reveal-delay-3">
-      "Transforming Data into Intelligence and Ideas into Impact."
+      Building
+      <span class="gradient-text">AI-Powered Full-Stack Applications</span>
+      & Data-Driven Solutions
     </p>
+
     <div class="hero-cta reveal reveal-delay-4">
+
       <a href="#projects" class="btn btn-primary">
-        <i class="ri-rocket-line"></i> View My Work
+        <i class="ri-rocket-line"></i>
+        Explore Projects
       </a>
-      <a href="mailto:mittalchirag2004@gmail.com" class="btn btn-outline">
-        <i class="ri-mail-send-line"></i> Get In Touch
+
+      <a href="resume.pdf" class="btn btn-outline" target="_blank">
+        <i class="ri-download-2-line"></i>
+        Download Resume
       </a>
-      <a href="resume.pdf" class="btn btn-primary" target="_blank">
-        <i class="ri-download-2-line"></i> Resume
+
+      <a href="mailto:mittalchirag2004@gmail.com?subject=Opportunity%20for%20Chirag%20Mittal"
+         class="btn btn-outline">
+        <i class="ri-mail-send-line"></i>
+        Let's Connect
       </a>
+
     </div>
+
     <div class="hero-stats reveal">
+
       <div class="stat-item">
         <div class="stat-number">8.61</div>
-        <div class="stat-label">CGPA / 10</div>
+        <div class="stat-label">CGPA (DIV I)</div>
       </div>
+
       <div class="stat-item">
-        <div class="stat-number">3+</div>
-        <div class="stat-label">Major Projects</div>
+        <div class="stat-number">4+</div>
+        <div class="stat-label">Featured Projects</div>
       </div>
+
       <div class="stat-item">
-        <div class="stat-number">AWS</div>
-        <div class="stat-label">Certified</div>
+        <div class="stat-number">Full Stack</div>
+        <div class="stat-label">AI • Data</div>
       </div>
-      <div class="stat-item">
-        <div class="stat-number">5+</div>
-        <div class="stat-label">Tech Domains</div>
-      </div>
+
     </div>
+
   </div>
+
 </section>
 
 <!-- ABOUT -->
 <section id="about">
   <div class="section-inner">
     <div class="about-grid">
+
+      <!-- Profile Image -->
       <div class="about-avatar-wrap reveal">
         <div class="avatar-ring">
-          <div class="avatar-inner" style="padding:0;overflow:hidden;"><img src="image.jpg" alt="Chirag Mittal" style="width:100%;height:100%;object-fit:cover;border-radius:50%;"></div>
-          <div class="avatar-badge">🎓 B.Tech AI & ML</div>
+          <div class="avatar-inner" style="padding:0;overflow:hidden;">
+            <img src="image.jpg"
+                 alt="Chirag Mittal"
+                 style="width:100%;height:100%;object-fit:cover;border-radius:50%;">
+          </div>
+
+          <div class="avatar-badge">
+            🎓 B.Tech CSE (AI & ML)
+          </div>
+
         </div>
       </div>
+
+      <!-- About Content -->
       <div class="about-info reveal reveal-delay-2">
-        <div class="section-eyebrow">About Me</div>
-        <h2 class="section-title">Passionate about AI, Data & Cloud</h2>
-        <p>I am a B.Tech graduate in Computer Science Engineering (AI & ML) with a strong passion for <strong>Data Analytics</strong>, <strong>Machine Learning</strong>, <strong>Cloud Computing</strong>, and <strong>Business Intelligence</strong>.</p>
-        <p>I enjoy solving real-world problems using data-driven approaches and building impactful solutions that combine analytics, automation, and AI technologies. I continuously learn new technologies and build projects that create practical value.</p>
-        <p>My expertise spans Python, SQL, Power BI, Machine Learning, Data Analysis, Cloud Computing, Web Scraping, and Data Visualization.</p>
+
+        <div class="section-eyebrow">
+          About Me
+        </div>
+
+        <h2 class="section-title">
+          Building Intelligent Software with AI, Full-Stack Development & Data
+        </h2>
+
+        <p>
+          I am a <strong>B.Tech graduate in Computer Science & Engineering (AI & ML)</strong>
+          with a <strong>CGPA of 8.61 (Division I)</strong>. I am passionate about
+          developing intelligent software that combines Artificial Intelligence,
+          modern Full-Stack Development, and Data Analytics to solve real-world
+          problems.
+        </p>
+
+        <p>
+          My experience ranges from building AI-powered applications like
+          <strong>Promptarium</strong> and intelligent pricing systems such as
+          <strong>Pricer</strong> to creating interactive dashboards and data-driven
+          solutions using Python, SQL, and Power BI.
+        </p>
+
+        <p>
+          I continuously explore emerging technologies in AI, cloud computing,
+          backend development, and software engineering while striving to build
+          products that are practical, scalable, and impactful.
+        </p>
+
         <div class="about-tags">
+
+          <span class="tag">⚛️ React.js</span>
+
+          <span class="tag">⚡ FastAPI</span>
+
           <span class="tag">🐍 Python</span>
-          <span class="tag">📊 Power BI</span>
-          <span class="tag">☁️ AWS Cloud</span>
-          <span class="tag">🤖 Machine Learning</span>
+
+          <span class="tag">🗄️ PostgreSQL</span>
+
           <span class="tag">🗄️ SQL</span>
+
+          <span class="tag">🤖 Gemini AI</span>
+
+          <span class="tag">📊 Power BI</span>
+
           <span class="tag">📈 Data Analytics</span>
-          <span class="tag">🔍 Web Scraping</span>
+
+          <span class="tag">☁️ AWS Cloud</span>
+
+          <span class="tag">🔐 JWT Authentication</span>
+
+          <span class="tag">🌐 REST APIs</span>
+
           <span class="tag">📡 CSI Media Manager</span>
-          <span class="tag">🏆 LeetCode</span>
-          <span class="tag">📉 Data Viz</span>
+
         </div>
-        <div style="display:flex;gap:1rem;margin-top:1.75rem;flex-wrap:wrap;">
-          <a href="https://www.linkedin.com/in/mittal-chirag/" target="_blank" class="btn btn-primary">
-            <i class="ri-linkedin-fill"></i> LinkedIn
+
+        <div
+          style="display:flex;gap:1rem;margin-top:1.75rem;flex-wrap:wrap;"
+        >
+
+          <a
+            href="https://www.linkedin.com/in/mittal-chirag/"
+            target="_blank"
+            class="btn btn-primary"
+          >
+            <i class="ri-linkedin-fill"></i>
+            LinkedIn
           </a>
-          <a href="https://github.com/Chirag-DATA" target="_blank" class="btn btn-outline">
-            <i class="ri-github-fill"></i> GitHub
+
+          <a
+            href="https://github.com/Chirag-DATA"
+            target="_blank"
+            class="btn btn-outline"
+          >
+            <i class="ri-github-fill"></i>
+            GitHub
           </a>
+
         </div>
+
       </div>
+
     </div>
   </div>
 </section>
@@ -194,95 +327,118 @@
 <!-- SKILLS -->
 <section id="skills">
   <div class="section-inner">
+
     <div class="reveal" style="text-align:center;margin-bottom:3rem;">
       <div class="section-eyebrow">Technical Skills</div>
       <h2 class="section-title">My Tech Stack</h2>
-      <p class="section-desc" style="margin:0 auto;">A versatile skill set spanning AI, data engineering, cloud platforms, and business intelligence tools.</p>
+
+      <p class="section-desc" style="margin:0 auto;">
+        A modern technology stack spanning Full-Stack Development, Artificial Intelligence,
+        Backend Engineering, Cloud Computing, and Data Analytics.
+      </p>
     </div>
+
     <div class="skills-grid">
+
+      <!-- Languages -->
       <div class="skill-category reveal">
         <div class="skill-cat-header">
-          <div class="skill-cat-icon">🐍</div>
+          <div class="skill-cat-icon">💻</div>
           <span class="skill-cat-name">Programming Languages</span>
         </div>
+
         <div class="skill-pills">
           <span class="skill-pill">Python</span>
+          <span class="skill-pill">JavaScript (ES6+)</span>
           <span class="skill-pill">SQL</span>
-          <span class="skill-pill">JavaScript</span>
           <span class="skill-pill">HTML5</span>
           <span class="skill-pill">CSS3</span>
         </div>
       </div>
+
+      <!-- Frontend -->
       <div class="skill-category reveal reveal-delay-1">
         <div class="skill-cat-header">
-          <div class="skill-cat-icon">📊</div>
-          <span class="skill-cat-name">Data Analytics</span>
+          <div class="skill-cat-icon">⚛️</div>
+          <span class="skill-cat-name">Frontend Development</span>
         </div>
+
         <div class="skill-pills">
-          <span class="skill-pill">Data Cleaning</span>
-          <span class="skill-pill">EDA</span>
-          <span class="skill-pill">Data Visualization</span>
-          <span class="skill-pill">Statistical Analysis</span>
-          <span class="skill-pill">Pandas</span>
-          <span class="skill-pill">NumPy</span>
-          <span class="skill-pill">Matplotlib</span>
+          <span class="skill-pill">React.js</span>
+          <span class="skill-pill">React Router</span>
+          <span class="skill-pill">Axios</span>
+          <span class="skill-pill">Responsive Design</span>
+          <span class="skill-pill">REST API Integration</span>
         </div>
       </div>
+
+      <!-- Backend -->
+      <div class="skill-category reveal reveal-delay-2">
+        <div class="skill-cat-header">
+          <div class="skill-cat-icon">⚡</div>
+          <span class="skill-cat-name">Backend Development</span>
+        </div>
+
+        <div class="skill-pills">
+          <span class="skill-pill">FastAPI</span>
+          <span class="skill-pill">REST APIs</span>
+          <span class="skill-pill">JWT Authentication</span>
+          <span class="skill-pill">SQLAlchemy</span>
+          <span class="skill-pill">Pydantic</span>
+          <span class="skill-pill">Uvicorn</span>
+        </div>
+      </div>
+
+      <!-- Database -->
+      <div class="skill-category reveal reveal-delay-1">
+        <div class="skill-cat-header">
+          <div class="skill-cat-icon">🗄️</div>
+          <span class="skill-cat-name">Databases</span>
+        </div>
+
+        <div class="skill-pills">
+          <span class="skill-pill">PostgreSQL</span>
+          <span class="skill-pill">MySQL</span>
+          <span class="skill-pill">Database Design</span>
+        </div>
+      </div>
+
+      <!-- AI & Data -->
       <div class="skill-category reveal reveal-delay-2">
         <div class="skill-cat-header">
           <div class="skill-cat-icon">🤖</div>
-          <span class="skill-cat-name">Machine Learning</span>
+          <span class="skill-cat-name">AI & Data Analytics</span>
         </div>
+
         <div class="skill-pills">
-          <span class="skill-pill">Scikit-Learn</span>
-          <span class="skill-pill">Regression</span>
-          <span class="skill-pill">Classification</span>
-          <span class="skill-pill">Feature Engineering</span>
-          <span class="skill-pill">Model Evaluation</span>
-          <span class="skill-pill">Sentiment Analysis</span>
-        </div>
-      </div>
-      <div class="skill-category reveal reveal-delay-1">
-        <div class="skill-cat-header">
-          <div class="skill-cat-icon">📈</div>
-          <span class="skill-cat-name">Business Intelligence</span>
-        </div>
-        <div class="skill-pills">
+          <span class="skill-pill">Google Gemini API</span>
+          <span class="skill-pill">Prompt Engineering</span>
+          <span class="skill-pill">Machine Learning</span>
+          <span class="skill-pill">Pandas</span>
+          <span class="skill-pill">NumPy</span>
           <span class="skill-pill">Power BI</span>
-          <span class="skill-pill">Interactive Dashboards</span>
-          <span class="skill-pill">KPI Analysis</span>
-          <span class="skill-pill">Data Storytelling</span>
+          <span class="skill-pill">Tableau</span>
           <span class="skill-pill">Excel</span>
         </div>
       </div>
-      <div class="skill-category reveal reveal-delay-2">
-        <div class="skill-cat-header">
-          <div class="skill-cat-icon">☁️</div>
-          <span class="skill-cat-name">Cloud & Databases</span>
-        </div>
-        <div class="skill-pills">
-          <span class="skill-pill">AWS Cloud</span>
-          <span class="skill-pill">EC2</span>
-          <span class="skill-pill">IAM</span>
-          <span class="skill-pill">S3</span>
-          <span class="skill-pill">MySQL</span>
-          <span class="skill-pill">SQL Server</span>
-        </div>
-      </div>
+
+      <!-- Tools -->
       <div class="skill-category reveal reveal-delay-3">
         <div class="skill-cat-header">
           <div class="skill-cat-icon">🛠️</div>
-          <span class="skill-cat-name">Tools & Technologies</span>
+          <span class="skill-cat-name">Tools & Cloud</span>
         </div>
+
         <div class="skill-pills">
-          <span class="skill-pill">Git & GitHub</span>
+          <span class="skill-pill">Git</span>
+          <span class="skill-pill">GitHub</span>
+          <span class="skill-pill">Postman</span>
           <span class="skill-pill">VS Code</span>
+          <span class="skill-pill">AWS Cloud Practitioner</span>
           <span class="skill-pill">Jupyter Notebook</span>
-          <span class="skill-pill">Web Scraping</span>
-          <span class="skill-pill">API Integration</span>
-          <span class="skill-pill">Power BI Desktop</span>
         </div>
       </div>
+
     </div>
   </div>
 </section>
@@ -290,99 +446,243 @@
 <!-- PROJECTS -->
 <section id="projects" style="background:var(--bg-secondary);">
   <div class="section-inner">
+
     <div class="reveal" style="text-align:center;margin-bottom:3rem;">
       <div class="section-eyebrow">Projects</div>
-      <h2 class="section-title">Featured Work</h2>
-      <p class="section-desc" style="margin:0 auto;">Real-world projects demonstrating expertise in AI, ML, data analytics, and business intelligence.</p>
+
+      <h2 class="section-title">
+        Featured Work
+      </h2>
+
+      <p class="section-desc" style="margin:0 auto;">
+        A collection of production-ready projects showcasing expertise in
+        Full-Stack Development, Artificial Intelligence, Backend Engineering,
+        Machine Learning, and Data Analytics.
+      </p>
+
     </div>
+
     <div class="projects-grid">
 
-      <!-- Project 1 -->
+      <!-- ====================================================== -->
+      <!-- PROJECT 1 -->
+      <!-- ====================================================== -->
+
       <div class="project-card reveal">
+
         <div class="project-banner banner-1">
-          <div class="project-banner-icon">💰</div>
+          <div class="project-banner-icon">🚀</div>
           <div class="project-banner-num">01</div>
         </div>
+
         <div class="project-body">
+
           <div class="project-tech-row">
-            <span class="tech-tag">Python</span>
-            <span class="tech-tag">XGBoost</span>
+
+            <span class="tech-tag">React.js</span>
             <span class="tech-tag">FastAPI</span>
-            <span class="tech-tag">Selenium</span>
-            <span class="tech-tag">ML</span>
+            <span class="tech-tag">PostgreSQL</span>
+            <span class="tech-tag">JWT</span>
+            <span class="tech-tag">Gemini AI</span>
+
           </div>
-          <h3>PRICER – Intelligent Product Cost Recommendation System</h3>
-          <p>An AI tool (FastAPI + XGBoost) that scans top shopping sites like Myntra/AJIO for the "perfect price" of any product — using stealth scraping, ML-based trend detection, and an interactive chart dashboard.</p>
+
+          <h3>
+            Promptarium – AI Prompt Management Platform
+          </h3>
+
+          <p>
+            A production-ready full-stack AI platform that enables users to create,
+            organize, search, enhance, and manage AI prompts through a secure and
+            intuitive workspace. Built using React.js, FastAPI, PostgreSQL, JWT
+            Authentication, and Google Gemini AI with scalable REST APIs and a
+            responsive user interface.
+          </p>
+
           <div class="project-features">
-            <span>E-commerce data collection & trend analysis</span>
-            <span>Sentiment analysis on customer reviews</span>
-            <span>ML-powered price recommendation engine</span>
-            <span>Interactive data visualization dashboards</span>
+
+            <span>JWT Authentication & Secure User Accounts</span>
+
+            <span>AI-Powered Prompt Enhancement</span>
+
+            <span>Advanced Search, Filters & Categories</span>
+
+            <span>Complete CRUD Operations</span>
+
+            <span>Responsive React Dashboard</span>
+
+            <span>FastAPI REST Backend</span>
+
           </div>
+
           <div class="project-links">
-            <a href="https://github.com/Chirag-DATA/Pricer-Project" target="_blank" class="btn btn-primary" style="font-size:0.82rem;">
-              <i class="ri-github-fill"></i> GitHub
+
+            <a href="https://github.com/Chirag-DATA/Promptarium"
+               target="_blank"
+               class="btn btn-primary"
+               style="font-size:0.82rem;">
+
+              <i class="ri-github-fill"></i>
+              Frontend
+
             </a>
+
+            <a href="https://github.com/Chirag-DATA/Promptarium-Backend"
+               target="_blank"
+               class="btn btn-outline"
+               style="font-size:0.82rem;">
+
+              <i class="ri-server-line"></i>
+              Backend
+
+            </a>
+            <a 
+              href="https://promptarium.netlify.app"
+              target="_blank"
+              class="btn btn-primary">
+                <i class="ri-external-link-line"></i>
+              Live Demo
+            </a>
+
           </div>
+
         </div>
+
       </div>
 
-      <!-- Project 2 -->
+      <!-- ====================================================== -->
+      <!-- PROJECT 2 -->
+      <!-- ====================================================== -->
+
       <div class="project-card reveal reveal-delay-1">
+
         <div class="project-banner banner-2">
-          <div class="project-banner-icon">📊</div>
+          <div class="project-banner-icon">💰</div>
           <div class="project-banner-num">02</div>
         </div>
+
         <div class="project-body">
+
           <div class="project-tech-row">
+
+            <span class="tech-tag">Python</span>
+            <span class="tech-tag">FastAPI</span>
+            <span class="tech-tag">XGBoost</span>
+            <span class="tech-tag">Computer Vision</span>
+            <span class="tech-tag">Selenium</span>
+
+          </div>
+
+          <h3>
+            PRICER – Intelligent Product Cost Recommendation System
+          </h3>
+
+          <p>
+            An AI-powered garment price recommendation platform that combines
+            Machine Learning, Computer Vision, web scraping, and market intelligence
+            to predict optimal product pricing. Built using FastAPI, XGBoost,
+            Selenium, and interactive analytics dashboards.
+          </p>
+
+          <div class="project-features">
+
+            <span>Machine Learning Price Prediction</span>
+
+            <span>Computer Vision Feature Extraction</span>
+
+            <span>Automated E-Commerce Data Collection</span>
+
+            <span>Market Trend & Sentiment Analysis</span>
+
+            <span>FastAPI Backend APIs</span>
+
+            <span>Interactive Analytics Dashboard</span>
+
+          </div>
+
+          <div class="project-links">
+
+            <a href="https://github.com/Chirag-DATA/Pricer-Project"
+               target="_blank"
+               class="btn btn-primary"
+               style="font-size:0.82rem;">
+
+              <i class="ri-github-fill"></i>
+              Source Code
+
+            </a>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- ====================================================== -->
+      <!-- PROJECT 3 -->
+      <!-- ====================================================== -->
+
+      <div class="project-card reveal reveal-delay-2">
+
+        <div class="project-banner banner-3">
+          <div class="project-banner-icon">📊</div>
+          <div class="project-banner-num">03</div>
+        </div>
+
+        <div class="project-body">
+
+          <div class="project-tech-row">
+
             <span class="tech-tag">Python</span>
             <span class="tech-tag">MySQL</span>
             <span class="tech-tag">Power BI</span>
             <span class="tech-tag">Pandas</span>
-            <span class="tech-tag">EDA</span>
-          </div>
-          <h3>Customer Shopping Behavior Analysis</h3>
-          <p>End-to-end analysis pipeline — Python for cleaning & EDA, MySQL for storage & SQL queries, and a Power BI dashboard to surface customer patterns, purchase trends, and revenue drivers.</p>
-          <div class="project-features">
-            <span>Data loading, cleaning & missing value handling in Python</span>
-            <span>Python-to-MySQL pipeline with SQL query insights</span>
-            <span>EDA to identify purchase trends & revenue drivers</span>
-            <span>Interactive Power BI dashboard for decision-making</span>
-          </div>
-          <div class="project-links">
-            <a href="https://github.com/Chirag-DATA/Customer_Data_Analysis" target="_blank" class="btn btn-primary" style="font-size:0.82rem;">
-              <i class="ri-github-fill"></i> GitHub
-            </a>
-          </div>
-        </div>
-      </div>
-
-      <!-- Project 3 -->
-      <div class="project-card reveal reveal-delay-2">
-        <div class="project-banner banner-3">
-          <div class="project-banner-icon">📉</div>
-          <div class="project-banner-num">03</div>
-        </div>
-        <div class="project-body">
-          <div class="project-tech-row">
-            <span class="tech-tag">Power BI</span>
             <span class="tech-tag">SQL</span>
-            <span class="tech-tag">Excel</span>
+
           </div>
-          <h3>Patient Wait List Dashboard – Healthcare Analytics</h3>
-          <p>Multi-page Power BI healthcare analytics report monitoring patient waiting lists (2018–2021) across case types, specialties, age groups, and time bands — with DAX-driven dynamic KPIs.</p>
+
+          <h3>
+            Customer Shopping Behavior Analysis
+          </h3>
+
+          <p>
+            A complete data analytics solution involving Python, SQL, and Power BI
+            to analyze customer purchasing behavior, identify sales trends, and
+            generate actionable business insights through interactive dashboards.
+          </p>
+
           <div class="project-features">
-            <span>DAX measures for median vs average wait time KPIs</span>
-            <span>Drill-through, tooltips & slicers for exploration</span>
-            <span>Analysis by case type, specialty & age group</span>
-            <span>Multi-page report covering 2018–2021 patient data</span>
+
+            <span>Python Data Cleaning & EDA</span>
+
+            <span>SQL Database Integration</span>
+
+            <span>Customer Segmentation</span>
+
+            <span>Revenue & Sales Trend Analysis</span>
+
+            <span>Interactive Power BI Dashboard</span>
+
+            <span>Business Insight Generation</span>
+
           </div>
+
           <div class="project-links">
-            <a href="https://github.com/Chirag-DATA/PowerBI/tree/main/Project/HealthCare%20Data%20Analysis" target="_blank" class="btn btn-primary" style="font-size:0.82rem;">
-              <i class="ri-github-fill"></i> GitHub
+
+            <a href="https://github.com/Chirag-DATA/Customer_Data_Analysis"
+               target="_blank"
+               class="btn btn-primary"
+               style="font-size:0.82rem;">
+
+              <i class="ri-github-fill"></i>
+              Source Code
+
             </a>
+
           </div>
+
         </div>
+
       </div>
 
     </div>
@@ -429,177 +729,387 @@
 <!-- TIMELINE -->
 <section id="timeline" style="background:var(--bg-secondary);">
   <div class="section-inner">
+
     <div class="reveal" style="text-align:center;margin-bottom:3.5rem;">
-      <div class="section-eyebrow">Journey</div>
-      <h2 class="section-title">Experience & Learning Path</h2>
-      <p class="section-desc" style="margin:0 auto;">A chronological view of milestones, projects, and achievements that define my professional growth.</p>
+      <div class="section-eyebrow">My Journey</div>
+      <h2 class="section-title">Learning & Professional Milestones</h2>
+      <p class="section-desc" style="margin:0 auto;">
+        My journey from a Computer Science student to an AI-powered Full-Stack Developer,
+        Data Analytics enthusiast, and Cloud learner through continuous learning,
+        certifications, and real-world projects.
+      </p>
     </div>
+
     <div class="timeline">
+
+      <!-- Taiwan Expo -->
       <div class="timeline-item reveal">
         <div class="timeline-dot"></div>
-        <div class="timeline-date">2024</div>
+        <div class="timeline-date">September 2024</div>
+
         <div class="timeline-card">
           <h3>🏛️ Taiwan Expo 2024 – Industry 4.0 Exposure</h3>
-          <p>Attended Taiwan Expo 2024 at Pragati Maidan, New Delhi, gaining hands-on exposure to AI, Smart Manufacturing, Drone Technology, and next-gen industrial solutions.</p>
+          <p>
+            Attended Taiwan Expo 2024 at Pragati Maidan, New Delhi, exploring
+            cutting-edge innovations in Artificial Intelligence, Robotics,
+            Smart Manufacturing, Semiconductor Technologies, and Industry 4.0.
+          </p>
         </div>
       </div>
+
+      <!-- Data Analytics -->
       <div class="timeline-item reveal reveal-delay-1">
-        <div class="timeline-dot" style="background:var(--accent-violet);box-shadow:0 0 12px rgba(123,47,190,0.5);"></div>
-        <div class="timeline-date">2024</div>
+        <div class="timeline-dot"
+             style="background:var(--accent-violet);box-shadow:0 0 12px rgba(123,47,190,.5);"></div>
+
+        <div class="timeline-date">2024–2025</div>
+
         <div class="timeline-card">
-          <h3>☁️ AWS Cloud Practitioner Certified (CLF-C02)</h3>
-          <p>Earned the AWS Cloud Practitioner certification — validating expertise in cloud fundamentals, AWS global infrastructure, security, and core service architecture.</p>
+          <h3>📊 Data Analytics & Business Intelligence Projects</h3>
+
+          <p>
+            Developed multiple end-to-end analytics projects using Python,
+            SQL, Excel, Tableau, and Power BI, transforming raw datasets
+            into interactive dashboards and actionable business insights.
+          </p>
         </div>
       </div>
+
+      <!-- AWS -->
+      <div class="timeline-item reveal reveal-delay-2">
+        <div class="timeline-dot"
+             style="background:var(--accent-teal);box-shadow:0 0 12px rgba(10,255,210,.45);"></div>
+
+        <div class="timeline-date">2025</div>
+
+        <div class="timeline-card">
+          <h3>☁️ AWS Certified Cloud Practitioner</h3>
+
+          <p>
+            Earned the AWS Cloud Practitioner certification, validating
+            expertise in cloud fundamentals, AWS architecture,
+            security, pricing models, and core cloud services.
+          </p>
+        </div>
+      </div>
+
+      <!-- PRICER -->
+      <div class="timeline-item reveal reveal-delay-1">
+        <div class="timeline-dot"></div>
+
+        <div class="timeline-date">2025–2026</div>
+
+        <div class="timeline-card">
+          <h3>🤖 PRICER – AI Product Pricing Platform</h3>
+
+          <p>
+            Built an AI-powered product pricing recommendation system using
+            Machine Learning, Computer Vision, FastAPI, Selenium, and
+            market intelligence to recommend optimal product prices
+            based on real-time e-commerce trends.
+          </p>
+        </div>
+      </div>
+
+      <!-- Graduation -->
+      <div class="timeline-item reveal reveal-delay-2">
+        <div class="timeline-dot"
+             style="background:var(--accent-violet);box-shadow:0 0 12px rgba(123,47,190,.5);"></div>
+
+        <div class="timeline-date">2026</div>
+
+        <div class="timeline-card">
+          <h3>🎓 Graduated in Computer Science (AI & ML)</h3>
+
+          <p>
+            Successfully completed B.Tech in Computer Science &
+            Engineering (Artificial Intelligence & Machine Learning)
+            with an overall <strong>CGPA of 8.61 (Division I)</strong>,
+            strengthening my foundation in Software Development,
+            Artificial Intelligence, Databases, and Cloud Computing.
+          </p>
+        </div>
+      </div>
+
+      <!-- Promptarium -->
+      <div class="timeline-item reveal reveal-delay-1">
+        <div class="timeline-dot"
+             style="background:var(--accent-teal);box-shadow:0 0 12px rgba(10,255,210,.45);"></div>
+
+        <div class="timeline-date">2026</div>
+
+        <div class="timeline-card">
+          <h3>🚀 Promptarium – AI Prompt Management Platform</h3>
+
+          <p>
+            Designed and developed a production-ready Full-Stack AI application
+            using React.js, FastAPI, PostgreSQL, JWT Authentication,
+            and Google Gemini AI. The platform enables users to create,
+            organize, enhance, and manage AI prompts through
+            a secure and responsive interface.
+          </p>
+        </div>
+      </div>
+
+      <!-- Present -->
       <div class="timeline-item reveal reveal-delay-2">
         <div class="timeline-dot"></div>
-        <div class="timeline-date">2023–2024</div>
+
+        <div class="timeline-date">Present</div>
+
         <div class="timeline-card">
-          <h3>💰 PRICER – AI Pricing Engine Development</h3>
-          <p>Built PRICER, an end-to-end AI-powered product pricing and trend analysis system leveraging web scraping, ML models, and sentiment analysis for real-time pricing recommendations.</p>
-        </div>
-      </div>
-      <div class="timeline-item reveal reveal-delay-1">
-        <div class="timeline-dot" style="background:var(--accent-teal);box-shadow:0 0 12px rgba(10,255,210,0.4);"></div>
-        <div class="timeline-date">2023</div>
-        <div class="timeline-card">
-          <h3>📈 Power BI Dashboard Portfolio</h3>
-          <p>Designed and deployed interactive Power BI dashboards for business intelligence — translating raw operational data into executive-ready KPI reports and visual analytics.</p>
-        </div>
-      </div>
-      <div class="timeline-item reveal reveal-delay-2">
-        <div class="timeline-dot"></div>
-        <div class="timeline-date">2022–2023</div>
-        <div class="timeline-card">
-          <h3>📊 Data Analytics Projects Development</h3>
-          <p>Developed a comprehensive portfolio of real-world data analysis projects using Python, Pandas, Matplotlib, and SQL — covering EDA, statistical analysis, and business insight generation.</p>
-        </div>
-      </div>
-      <div class="timeline-item reveal reveal-delay-1">
-        <div class="timeline-dot" style="background:var(--accent-violet);box-shadow:0 0 12px rgba(123,47,190,0.5);"></div>
-        <div class="timeline-date">Ongoing</div>
-        <div class="timeline-card">
-          <h3>🚀 Continuous Learning in AI & Machine Learning</h3>
-          <p>Actively upskilling in advanced ML algorithms, deep learning, cloud-native AI services, and cutting-edge data engineering practices to stay at the forefront of the field.</p>
+          <h3>🌱 Continuous Learning & Building</h3>
+
+          <p>
+            Currently expanding my expertise in Full-Stack Development,
+            Artificial Intelligence, Backend Engineering, Cloud Computing,
+            and scalable software architecture while building production-ready
+            applications that solve real-world problems.
+          </p>
         </div>
       </div>
     </div>
   </div>
 </section>
 
+
 <!-- GITHUB -->
 <section id="github">
   <div class="section-inner">
+
     <div class="reveal" style="text-align:center;margin-bottom:3rem;">
-      <div class="section-eyebrow">GitHub</div>
+      <div class="section-eyebrow">GitHub Portfolio</div>
       <h2 class="section-title">Open Source & Code</h2>
-      <p class="section-desc" style="margin:0 auto;">Explore my repositories and coding activity across AI, data analytics, and full-stack projects.</p>
+      <p class="section-desc" style="margin:0 auto;">
+        Explore my open-source repositories showcasing Full-Stack Development,
+        Artificial Intelligence, Backend Engineering, Data Analytics,
+        Machine Learning, and Cloud technologies.
+      </p>
     </div>
+
     <div class="github-grid">
+
+      <!-- Left Side -->
       <div class="reveal">
+
         <div class="github-profile-card" style="margin-bottom:1.5rem;">
+
           <div class="github-profile-header">
             <div class="github-avatar">👨‍💻</div>
+
             <div>
               <div class="github-username">Chirag Mittal</div>
               <div class="github-handle">@Chirag-DATA</div>
             </div>
           </div>
-          <p style="font-size:0.875rem;color:var(--text-secondary);line-height:1.7;">
-            AI & ML Engineer · Data Analyst · Cloud Practitioner. Building data-driven solutions and sharing them with the open-source community.
+
+          <p style="font-size:0.9rem;color:var(--text-secondary);line-height:1.7;">
+            Full-Stack Developer • AI Enthusiast • Data Analyst • AWS Certified Cloud Practitioner.
+            Passionate about building scalable AI-powered applications,
+            modern backend systems, and data-driven software solutions.
           </p>
+
           <div class="github-stats-row">
+
             <div class="g-stat">
-              <div class="g-stat-num">5+</div>
-              <div class="g-stat-label">Repos</div>
+              <div class="g-stat-num">15+</div>
+              <div class="g-stat-label">Repositories</div>
             </div>
+
             <div class="g-stat">
-              <div class="g-stat-num">3+</div>
+              <div class="g-stat-num">10+</div>
               <div class="g-stat-label">Projects</div>
             </div>
+
             <div class="g-stat">
               <div class="g-stat-num">AWS</div>
               <div class="g-stat-label">Certified</div>
             </div>
+
           </div>
-          <a href="https://github.com/Chirag-DATA" target="_blank" class="btn btn-primary" style="width:100%;justify-content:center;margin-top:1.25rem;">
-            <i class="ri-github-fill"></i> View GitHub Profile
+
+          <a href="https://github.com/Chirag-DATA"
+             target="_blank"
+             class="btn btn-primary"
+             style="width:100%;justify-content:center;margin-top:1.25rem;">
+
+            <i class="ri-github-fill"></i>
+            View GitHub Profile
+
           </a>
+
         </div>
 
+        <!-- Contribution Graph -->
         <div class="contribution-graph">
+
           <h4>Contribution Activity</h4>
+
           <div class="contrib-grid" id="contribGrid"></div>
+
           <div style="display:flex;align-items:center;gap:0.5rem;margin-top:0.75rem;font-size:0.72rem;color:var(--text-muted);">
+
             <span>Less</span>
-            <div style="width:12px;height:12px;border-radius:2px;" class="c0"></div>
-            <div style="width:12px;height:12px;border-radius:2px;" class="c1"></div>
-            <div style="width:12px;height:12px;border-radius:2px;" class="c2"></div>
-            <div style="width:12px;height:12px;border-radius:2px;" class="c3"></div>
-            <div style="width:12px;height:12px;border-radius:2px;" class="c4"></div>
+
+            <div class="c0" style="width:12px;height:12px;border-radius:2px;"></div>
+            <div class="c1" style="width:12px;height:12px;border-radius:2px;"></div>
+            <div class="c2" style="width:12px;height:12px;border-radius:2px;"></div>
+            <div class="c3" style="width:12px;height:12px;border-radius:2px;"></div>
+            <div class="c4" style="width:12px;height:12px;border-radius:2px;"></div>
+
             <span>More</span>
+
           </div>
+
         </div>
+
       </div>
 
+      <!-- Right Side -->
       <div class="reveal reveal-delay-2">
-        <h4 style="font-family:'Space Grotesk',sans-serif;font-size:1rem;font-weight:600;margin-bottom:1rem;">Featured Repositories</h4>
+
+        <h4 style="font-family:'Space Grotesk',sans-serif;font-size:1rem;font-weight:600;margin-bottom:1rem;">
+          Featured Repositories
+        </h4>
+
         <div class="repo-list">
-          <a href="https://github.com/Chirag-DATA/Pricer-Project" target="_blank" class="repo-item">
+
+          <a href="https://github.com/Chirag-DATA/Promptarium"
+             target="_blank"
+             class="repo-item">
+
             <div>
-              <div class="repo-name">PRICER</div>
-              <div class="repo-desc">AI-powered product pricing & trend analysis system</div>
+              <div class="repo-name">🚀 Promptarium</div>
+              <div class="repo-desc">
+                AI Prompt Management Platform built with React.js, FastAPI,
+                PostgreSQL & Google Gemini AI.
+              </div>
             </div>
+
+            <span class="repo-lang">React</span>
+
+          </a>
+
+
+          <a href="https://github.com/Chirag-DATA/Promptarium-Backend"
+             target="_blank"
+             class="repo-item">
+
+            <div>
+              <div class="repo-name">⚙️ Promptarium Backend</div>
+              <div class="repo-desc">
+                Secure FastAPI backend with JWT Authentication,
+                PostgreSQL and REST APIs.
+              </div>
+            </div>
+
+            <span class="repo-lang">FastAPI</span>
+
+          </a>
+
+
+          <a href="https://github.com/Chirag-DATA/Pricer-Project"
+             target="_blank"
+             class="repo-item">
+
+            <div>
+              <div class="repo-name">🤖 PRICER</div>
+              <div class="repo-desc">
+                AI-powered product pricing recommendation engine using
+                Machine Learning, Computer Vision & Web Scraping.
+              </div>
+            </div>
+
             <span class="repo-lang">Python</span>
+
           </a>
-          <a href="https://github.com/Chirag-DATA/Customer_Data_Analysis" target="_blank" class="repo-item">
+
+
+          <a href="https://github.com/Chirag-DATA/Customer_Data_Analysis"
+             target="_blank"
+             class="repo-item">
+
             <div>
-              <div class="repo-name">Data-Analytics-Projects</div>
-              <div class="repo-desc">Real-world data analysis & EDA portfolio</div>
+              <div class="repo-name">📊 Customer Analytics</div>
+              <div class="repo-desc">
+                End-to-end data analytics pipeline using Python,
+                SQL and Power BI.
+              </div>
             </div>
+
             <span class="repo-lang">Python</span>
+
           </a>
-          <a href="https://github.com/Chirag-DATA/PowerBI/tree/main/Project/HealthCare%20Data%20Analysis" target="_blank" class="repo-item">
-            <div>
-              <div class="repo-name">PowerBI-Dashboards</div>
-              <div class="repo-desc">Business intelligence dashboards & KPI reports</div>
-            </div>
-            <span class="repo-lang">Power BI</span>
-          </a>
+
         </div>
+
+
         <div style="margin-top:2rem;">
-          <h4 style="font-family:'Space Grotesk',sans-serif;font-size:1rem;font-weight:600;margin-bottom:1rem;">Language Distribution</h4>
+
+          <h4 style="font-family:'Space Grotesk',sans-serif;font-size:1rem;font-weight:600;margin-bottom:1rem;">
+            Technology Distribution
+          </h4>
+
           <div style="display:flex;flex-direction:column;gap:0.75rem;">
+
+            <!-- Python -->
             <div>
+
               <div style="display:flex;justify-content:space-between;margin-bottom:0.3rem;font-size:0.8rem;">
-                <span style="color:var(--text-secondary);">Python</span><span style="color:var(--accent-cyan);">70%</span>
+                <span style="color:var(--text-secondary);">Python</span>
+                <span style="color:var(--accent-cyan);">45%</span>
               </div>
+
               <div style="height:6px;background:var(--bg-glass);border-radius:3px;overflow:hidden;">
-                <div style="height:100%;width:70%;background:var(--gradient-hero);border-radius:3px;transition:width 1.5s ease;"></div>
+                <div style="height:100%;width:45%;background:var(--gradient-hero);border-radius:3px;"></div>
               </div>
+
             </div>
+
+
+            <!-- React -->
+
             <div>
+
               <div style="display:flex;justify-content:space-between;margin-bottom:0.3rem;font-size:0.8rem;">
-                <span style="color:var(--text-secondary);">SQL</span><span style="color:var(--accent-cyan);">15%</span>
+                <span style="color:var(--text-secondary);">JavaScript / React</span>
+                <span style="color:var(--accent-cyan);">25%</span>
               </div>
+
+              <div style="height:6px;background:var(--bg-glass);border-radius:3px;overflow:hidden;">
+                <div style="height:100%;width:25%;background:linear-gradient(135deg,var(--accent-teal),#00D4FF);border-radius:3px;"></div>
+              </div>
+
+            </div>
+
+
+            <!-- SQL -->
+
+            <div>
+
+              <div style="display:flex;justify-content:space-between;margin-bottom:0.3rem;font-size:0.8rem;">
+                <span style="color:var(--text-secondary);">SQL</span>
+                <span style="color:var(--accent-cyan);">15%</span>
+              </div>
+
               <div style="height:6px;background:var(--bg-glass);border-radius:3px;overflow:hidden;">
                 <div style="height:100%;width:15%;background:linear-gradient(135deg,var(--accent-violet),#A96FFF);border-radius:3px;"></div>
               </div>
+
             </div>
+
+
+            <!-- Others -->
+
             <div>
+
               <div style="display:flex;justify-content:space-between;margin-bottom:0.3rem;font-size:0.8rem;">
-                <span style="color:var(--text-secondary);">JavaScript / HTML / CSS</span><span style="color:var(--accent-cyan);">10%</span>
+                <span style="color:var(--text-secondary);">FastAPI • PostgreSQL • HTML • CSS</span>
+                <span style="color:var(--accent-cyan);">15%</span>
               </div>
+
               <div style="height:6px;background:var(--bg-glass);border-radius:3px;overflow:hidden;">
-                <div style="height:100%;width:10%;background:linear-gradient(135deg,var(--accent-teal),#00D4FF);border-radius:3px;"></div>
-              </div>
-            </div>
-            <div>
-              <div style="display:flex;justify-content:space-between;margin-bottom:0.3rem;font-size:0.8rem;">
-                <span style="color:var(--text-secondary);">Other</span><span style="color:var(--accent-cyan);">5%</span>
-              </div>
-              <div style="height:6px;background:var(--bg-glass);border-radius:3px;overflow:hidden;">
-                <div style="height:100%;width:5%;background:rgba(255,255,255,0.3);border-radius:3px;"></div>
+                <div style="height:100%;width:15%;background:rgba(255,255,255,.35);border-radius:3px;"></div>
               </div>
             </div>
           </div>
